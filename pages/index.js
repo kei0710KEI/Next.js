@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/Button";
+import { Headline } from "@/components/Headline";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,22 +28,7 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js logo"
-            width={180}
-            height={38}
-            priority
-          />
-          <a>Index Page</a>
-          <ol>
-            <li>
-              Get started by editing <code>pages/index.js</code>.
-            </li>
-            <li>Save and see your changes instantly.</li>
-          </ol>
-
+          <Headline title="Index Page!!!" />
           <Button />
         </main>
 
